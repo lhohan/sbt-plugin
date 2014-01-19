@@ -6,18 +6,19 @@ import sbt._
  */
 object HelloPlugin extends Plugin {
 
+  val helloSetting = settingKey[String]("An hello setting.")
 
-  val sayHello = TaskKey[Unit]("say hello")
+  val helloTask = TaskKey[Unit]("say hello")
 
   sayHello := {
-    println("hello from sbt-plugin!")
+    println("hello " + helloSetting.value)
   }
 
 
   // a group of settings ready to be added to a Project
   // to automatically add them, do
   val helloSettings = Seq(
-    sayHello
+    helloSetting, helloTask
   )
 
 
