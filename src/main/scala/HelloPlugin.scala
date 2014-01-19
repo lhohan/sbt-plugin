@@ -10,15 +10,16 @@ object HelloPlugin extends Plugin {
 
   val helloTask = TaskKey[Unit]("say hello")
 
-  helloTask := {
-    println("hello " + helloSetting.value)
-  }
+
 
 
   // a group of settings ready to be added to a Project
   // to automatically add them, do
   val helloSettings = Seq(
-    helloSetting, helloTask
+    helloSetting := "world?",
+    helloTask := {
+      println("hello " + helloSetting.value)
+    }
   )
 
 
