@@ -9,7 +9,7 @@ import Project.Initialize
  * User: hanlho
  * DateTime: 19/01/14 15:41
  */
-class HelloPlugin {
+object HelloPlugin extends Plugin{
 
 
   val sayHello = TaskKey[Unit]("say hello")
