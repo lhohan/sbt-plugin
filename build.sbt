@@ -6,4 +6,3 @@ organization := "eu.lhoest"
 
 sbtPlugin := true
 
-MyPlugin.newSettings
