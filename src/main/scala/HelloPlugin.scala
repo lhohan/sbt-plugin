@@ -8,7 +8,7 @@ object HelloPlugin extends Plugin {
 
   val helloSetting = settingKey[String]("An hello setting.")
 
-  val helloTask = TaskKey[Unit]("say hello")
+  val helloTask = taskKey[Unit]("say hello")
 
 
 
