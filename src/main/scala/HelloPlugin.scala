@@ -10,7 +10,7 @@ object HelloPlugin extends Plugin {
 
   val helloTask = TaskKey[Unit]("say hello")
 
-  sayHello := {
+  helloTask := {
     println("hello " + helloSetting.value)
   }
 
