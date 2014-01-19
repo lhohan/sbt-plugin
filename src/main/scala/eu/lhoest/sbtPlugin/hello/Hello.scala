@@ -1,10 +1,16 @@
-import sbt.{TaskKey, Plugin}
+package eu.lhoest.sbtPlugin.hello
+
+
+import sbt._
+import Keys._
+import Project.Initialize
 
 /**
  * User: hanlho
- * DateTime: 19/01/14 13:34
+ * DateTime: 19/01/14 15:41
  */
-object SbtPluginPlugin extends Plugin {
+class HelloPlugin {
+
 
   val sayHello = TaskKey[Unit]("say hello")
 
@@ -15,8 +21,9 @@ object SbtPluginPlugin extends Plugin {
 
   // a group of settings ready to be added to a Project
   // to automatically add them, do
-  val pluginSettings = Seq(
+  val helloSettings = Seq(
     sayHello
   )
+
 
 }
