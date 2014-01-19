@@ -1,15 +1,11 @@
-package eu.lhoest.sbtPlugin.hello
-
-
 import sbt._
 import Keys._
-import Project.Initialize
 
 /**
  * User: hanlho
  * DateTime: 19/01/14 15:41
  */
-object HelloPlugin extends Plugin{
+object HelloPlugin extends Plugin {
 
 
   val sayHello = TaskKey[Unit]("say hello")
