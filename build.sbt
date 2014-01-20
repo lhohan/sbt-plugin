@@ -1,6 +1,6 @@
 name := "sbt-plugin"
 
-version := "1.0"
+version := "0.2-SNAPSHOT"
 
 organization := "eu.lhoest"
 
